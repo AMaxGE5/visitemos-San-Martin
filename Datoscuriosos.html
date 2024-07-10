@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos curiosos</title>
+    <style>
+    .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        article {
+            flex: 2;
+            background-color: #c0d9d9;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #c0d9d9;
+            padding: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .new-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        .visitor-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .visitor-form input, .visitor-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .visitor-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+         /* Estilo para ocultar los subtemas por defecto */
+        .subtemas {
+            display: none;
+        }
+        
+        /* Estilo para mostrar los subtemas cuando se hace clic en el encabezado */
+        .encabezado:hover .subtemas {
+            display: block;
+        }
+ /* Estilo para el contenedor del mensaje de bienvenida */
+/* Estilo para el contenedor del mensaje de bienvenida */
+  .welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 6s ease-in-out; /* Ajusta el tiempo de transición */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+}
+
+.hide-welcome {
+  opacity: 0;
+}
+
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+  visibility: hidden; /* Ocultamos el contenido hasta que se muestre */
+}
+
+.show-content {
+  opacity: 1;
+  visibility: visible;
+}
+    </style>
+</head>
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1 id="welcome-heading">Bienvenido a nuestra página</h1>
+        <p id="welcome-text">Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+<body>
+
+    <header>
+            <div class="encabezado">
+                
+        <h2>Conoce el departamento de san martin </h2>
+        <ul class="subtemas">
+            <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="Geografia.html">Geografía</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="Historia.html">historia</a></li>
+                
+
+            </ul>
+        </nav>
+    </header>
+
+<section>
+    <article>
+        <h2>Región de San Martín en Perú</h2>
+        <p>El departamento de San Martín en Perú es una región con una rica historia, cultura y biodiversidad. Aquí tienes algunos datos curiosos sobre este departamento:</p>
+        <ol>
+            <li><strong>Ubicación y Extensión:</strong> San Martín es uno de los 26 departamentos que conforman el Perú. Está ubicado en la región nororiental del país, limitando con los departamentos de Loreto, Amazonas, La Libertad y Huánuco.</li>
+            <li><strong>Capital:</strong> La ciudad de Moyobamba es la capital del departamento de San Martín. Es conocida como la "Ciudad de las Orquídeas" debido a la gran variedad de estas flores que se encuentran en la región.</li>
+            <li><strong>Biodiversidad:</strong> San Martín es reconocido por su gran diversidad biológica. Alberga una parte significativa de la Amazonía peruana, incluyendo el Parque Nacional Cordillera Azul, que protege ecosistemas de selva montañosa y una rica fauna silvestre.</li>
+            <li><strong>Cultura y Tradiciones:</strong> La población de San Martín es diversa étnicamente, con una mezcla de comunidades indígenas, mestizas y colonizadores. Esto se refleja en su cultura, música, danzas y festividades tradicionales, como la Fiesta de San Juan y la Fiesta de la Virgen del Carmen.</li>
+            <li><strong>Economía:</strong> La economía de San Martín se basa principalmente en la agricultura, destacando el cultivo de café, cacao, frutas tropicales y especias. Además, el turismo está creciendo como una actividad importante debido a sus áreas naturales y sitios arqueológicos.</li>
+            <li><strong>Arqueología:</strong> En San Martín se encuentran sitios arqueológicos importantes, como la Fortaleza de Kuélap, que aunque está ubicada en el departamento de Amazonas, atrae a visitantes que también exploran otras zonas cercanas de la Amazonía peruana, incluida San Martín.</li>
+        </ol>
+             <div class="container">
+                <div class="text">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HgLUWkkVT4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+ <img src="imagenes/2.png" alt="Imagen 22" width="15%">
+</div>
+
+    </article>
+</section>
+
+<footer>
+    <p>Derechos reservados &copy; 2024</p>
+</footer>
+
+</body>
+<script>
+    // Array de mensajes de bienvenida
+    var welcomeMessages = [
+ { 
+    heading: "San Martín tiene una rica diversidad étnica y cultural",
+    text: "Influenciada por diversas etnias amazónicas y reflejada en su arte y tradiciones."
+  },
+  { 
+    heading: "San Martín es famoso por su producción de cacao de alta calidad",
+    text: "Reconocido a nivel nacional e internacional por su sabor y calidad."
+  },
+  { 
+    heading: "San Martín ofrece oportunidades únicas para el ecoturismo",
+    text: "Con una gran variedad de reservas naturales y actividades al aire libre."
+  }
+        // Puedes añadir más mensajes aquí
+    ];
+
+    // Función para obtener un índice aleatorio del array
+    function getRandomIndex(array) {
+        return Math.floor(Math.random() * array.length);
+    }
+
+    // Función para mostrar un mensaje aleatorio
+    function showRandomMessage() {
+        var randomIndex = getRandomIndex(welcomeMessages);
+        var message = welcomeMessages[randomIndex];
+
+        var headingElement = document.getElementById('welcome-heading');
+        var textElement = document.getElementById('welcome-text');
+
+        if (headingElement && textElement) {
+            headingElement.textContent = message.heading;
+            textElement.textContent = message.text;
+        }
+
+        // Mostrar el contenido después de la animación de bienvenida
+        var welcomeContainer = document.querySelector('.welcome-container');
+        setTimeout(function() {
+            welcomeContainer.classList.add('hide-welcome');
+            setTimeout(function() {
+                welcomeContainer.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Activar el desplazamiento después de ocultar el mensaje de bienvenida
+            }, 1000); // Ocultar después de 1 segundo
+        }, 3000); // Mostrar durante 3 segundos
+    }
+
+    // Mostrar mensaje aleatorio cuando se cargue la página
+    window.addEventListener('load', function() {
+        showRandomMessage();
+    });
+</script>
+</html>

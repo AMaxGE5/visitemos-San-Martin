@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geografia de San Martín</title>
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+        }
+  
+        .text {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        
+        article {
+            flex: 2;
+            background-color: #c0d9d9;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        
+        article p {
+            margin-bottom: 15px; /* Espacio entre párrafos */
+        }
+        
+        aside {
+            flex: 1;
+            background-color: #c0d9d9;
+            padding: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        footer {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .new-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        
+        .visitor-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .visitor-form input,
+        .visitor-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        
+        .visitor-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* Estilo para ocultar los subtemas por defecto */
+        .subtemas {
+            display: none;
+        }
+        
+        /* Estilo para mostrar los subtemas cuando se hace clic en el encabezado */
+        .encabezado:hover .subtemas {
+            display: block;
+        }
+          .welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 6s ease-in-out; /* Ajusta el tiempo de transición */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+}
+
+.hide-welcome {
+  opacity: 0;
+}
+
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+  visibility: hidden; /* Ocultamos el contenido hasta que se muestre */
+}
+
+.show-content {
+  opacity: 1;
+  visibility: visible;
+}
+    </style>
+</head>
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1 id="welcome-heading">Bienvenido a nuestra página</h1>
+        <p id="welcome-text">Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+<body bgcolor="#FAFAFA"; >
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+    <header>
+            <div class="encabezado">
+        <h2>Geografia </h2>
+        <ul class="subtemas">
+            <nav>
+            <ul>
+                 <li><a href="index.html">Index</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="datoscuriosos.html">Datos Curiosos</a></li>
+           </ul>
+        </nav>
+    </header>
+<body>
+    <section>
+        <article>
+            <h2>Geografia de San Martín</h2>
+            <p>La región de San Martín es una hermosa zona ubicada en el norte del Perú, conocida por su exuberante vegetación, sus imponentes montañas y su rica diversidad cultural.</p>
+            <p>Aquí puedes encontrar algunos aspectos destacados sobre la geografía de esta región:</p>
+            <div class="new-section">
+                <h3>Localización</h3>
+                <div class="text">
+                    <p>Según la página de “Viajar a Perú”, San Martín es un departamento de la selva peruana que<br>se encuentra en el Noroeste del Perú.</p>
+                    <img src="imagenes/Localización_1.png" alt="Lozalización_1.png" width="50%">
+                </div>
+                <div class="text">
+                    <p>Por lo que se ve, según la página de “Moyobamba Family”, San Marin hace frontera; en el<br>norte, con Amazonas; en el este, con Loreto; en el sur, con Huánuco; y en el oeste, con La<br>Libertad</p>
+                    <img src="imagenes/Localización_2.png" alt="Localización_2.png" width="50%">
+                </div>
+                <div class="text">
+                    <p>Según la pagina de “Securly”, San Martín se divide en 10 territorios; San Martín (Metropolitana),<br>Moyobamba (la capital), Rioja, Lamas, El Dorado, Picota, mariscal Caceres, Bellavista, Tocache<br>y Huallaga.</p>
+                    <img src="imagenes/Localización_3.png" alt="Localización_3.png" width="50%">
+                </div>
+            </div>
+        <div class="new-section">
+                <h3>Relieve</h3>
+                <p>La Geografíarafía de San Martín se caracteriza por su relieve montañoso. La Cordillera Azul cruza la región de norte a sur, proporcionando paisajes espectaculares y una gran diversidad de flora y fauna. Además de las montañas, también hay valles y llanuras que se extienden a lo largo de la región. San Martín está atravesado por numerosos ríos, siendo los más importantes el Huallaga, Mayo, Tocache y Sisa. Estos ríos y sus afluentes forman cuencas hidrográficas que son vitales para la agricultura y la vida silvestre de la región.</p>
+                <img src="imagenes/Relieve.png" alt="Relieve.png" width="75%">
+            </div>
+
+            <div class="new-section">
+                <h3>Climas</h3>
+                <p>En san martín, el clima que predomina subtropical y tropical,teniendo estaciones secas de junio a<br>septiembre  y otras lluviosas de octubre a mayo. La temperatura varia entre 23ºC y 27ºC y la<br>precipitación pluvial media anual es de 1 500 mm.</p>
+                <img src="imagenes/Clima.png" alt="Clima.png" width="75%">
+            </div>
+            
+            <div class="new-section">
+                <h3>Biodiversidad</h3>
+                <p>San Martín es conocida por su increíble biodiversidad. La región alberga una amplia variedad de especies de flora y fauna, muchas de las cuales son endémicas de la zona. En la selva se pueden encontrar especies como el jaguar, el oso de anteojos, el mono choro de cola amarilla, así como una gran diversidad de aves y reptiles.</p>
+            </div>
+            
+            <div class="new-section">
+                <h3>Uso de los recursos por parte del gobierno</h3>
+                <p>En la región de San Martín, el gobierno ha implementado una estrategia de uso de recursos que junta el desarrollo sostenible y la conservación de la biodiversidad. Además, se promueve una buena gestión de los recursos naturales y la participación de la comunidad, con un enfoque en el cumplimiento en las normas ambientales​.</p>
+                <img src="imagenes/Gobierno_regional.png" alt="Gobierno_regional.png" width="75%">
+          </div>
+
+        </article>
+        <aside>
+            <h2>Encabezados de Sección</h2>
+            <ul>
+                <li class="encabezado">Relación del hombre y su medio
+                    <ul class="subtemas">
+                        <li>La población en la zona rural se caracteriza porque sus viviendas de forma dispersa o diseminadas sin formar manzanas. Mientras que la zona urbana es un centro poblado urbano que tiene como mínimo 100 viviendas agrupadas contiguamente, y por excepción, todos aquellos que son capitales de distrito, aun cuando no reúnan la condición indicada.</li>
+                    </ul>
+                </li>
+                <li class="encabezado">Zonas protegidas
+                    <ul class="subtemas">
+                        <li>El Bosque de Protección Alto mayo protege importantes fuentes de agua y contiene una gran diversidad de plantas y animales. La conservación de estos recursos, es vital para el ecosistema y las comunidades locales​ (Go2Peru)​(viaja perú)</li>
+                        <li>El Área de Conservación Regional Cordillera Escalera conserva los bosques nubosos y las especies que viven allí, muchas de las cuales son únicas y están en peligro de extinción. Protege especies importantes como el oso de anteojos y el jaguar, y es clave para la investigación científica y el ecoturismo​ (Go2Peru)​​ (Patrimonios San Martín)​.</li>
+                        <li>El Parque Nacional Cordillera Azul Se protege para mantener intactos los bosques y hábitats diversos, que albergan una gran variedad de especies, incluidas muchas en peligro de extinción. Es crucial para la biodiversidad y ofrece oportunidades para la investigación y el ecoturismo  (Patrimonios San Martín)​.</li>
+                    </ul>
+                </li>
+            </ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8i-Z09DAFg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </aside>
+</section>
+
+<footer>
+    <p>Derechos reservados &copy; 2024</p>
+</footer>
+
+</body>
+<script>
+    // Array de mensajes de bienvenida
+    var welcomeMessages = [
+  { 
+    heading: "San Martín es conocido por su biodiversidad excepcional",
+    text: "Es hogar de numerosas especies de flora y fauna únicas en la región amazónica."
+  },
+  { 
+    heading: "San Martín tiene una historia marcada por la exploración y la colonización",
+    text: "Antiguamente explorada por misioneros y soldados durante la colonización española."
+  },
+  { 
+    heading: "San Martín es un destino destacado para el turismo de naturaleza",
+    text: "Ofrece paisajes espectaculares y una rica experiencia cultural en la Amazonía peruana."
+  }     // Puedes añadir más mensajes aquí
+    ];
+
+    // Función para obtener un índice aleatorio del array
+    function getRandomIndex(array) {
+        return Math.floor(Math.random() * array.length);
+    }
+
+    // Función para mostrar un mensaje aleatorio
+    function showRandomMessage() {
+        var randomIndex = getRandomIndex(welcomeMessages);
+        var message = welcomeMessages[randomIndex];
+
+        var headingElement = document.getElementById('welcome-heading');
+        var textElement = document.getElementById('welcome-text');
+
+        if (headingElement && textElement) {
+            headingElement.textContent = message.heading;
+            textElement.textContent = message.text;
+        }
+
+        // Mostrar el contenido después de la animación de bienvenida
+        var welcomeContainer = document.querySelector('.welcome-container');
+        setTimeout(function() {
+            welcomeContainer.classList.add('hide-welcome');
+            setTimeout(function() {
+                welcomeContainer.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Activar el desplazamiento después de ocultar el mensaje de bienvenida
+            }, 1000); // Ocultar después de 1 segundo
+        }, 3000); // Mostrar durante 3 segundos
+    }
+
+    // Mostrar mensaje aleatorio cuando se cargue la página
+    window.addEventListener('load', function() {
+        showRandomMessage();
+    });
+</script>
+</html>
+
+
+
+

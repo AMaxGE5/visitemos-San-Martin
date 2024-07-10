@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Región de San Martín</title>
+    <style>
+    .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        article {
+            flex: 2;
+            background-color: #c0d9d9;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #c0d9d9;
+            padding: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .new-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        .visitor-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .visitor-form input, .visitor-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .visitor-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+         /* Estilo para ocultar los subtemas por defecto */
+        .subtemas {
+            display: none;
+        }
+        
+        /* Estilo para mostrar los subtemas cuando se hace clic en el encabezado */
+        .encabezado:hover .subtemas {
+            display: block;
+        }
+ /* Estilo para el contenedor del mensaje de bienvenida */
+/* Estilo para el contenedor del mensaje de bienvenida */
+  .welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 6s ease-in-out; /* Ajusta el tiempo de transición */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+}
+
+.hide-welcome {
+  opacity: 0;
+}
+
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+  visibility: hidden; /* Ocultamos el contenido hasta que se muestre */
+}
+
+.show-content {
+  opacity: 1;
+  visibility: visible;
+}
+    </style>
+</head>
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1 id="welcome-heading">Bienvenido a nuestra página</h1>
+        <p id="welcome-text">Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+<body bgcolor="#FAFAFA">
+
+<header>
+    <div class="encabezado">
+        <h2>Economia</h2>
+        <ul class="subtemas">
+            <nav>
+            <ul>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="Geografia.html">Geografía</a></li>
+            <li><a href="Historia.html">Historia</a></li>
+            <li><a href="Datoscuriosos.html">Datos Curiosos</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<section>
+    <article>
+             <h2 id="generalidade">El departamento de San Martín</h2>
+             <div class="container">
+                <div class="text">
+        <p>El departamento de San Martín se encuentra ubicado en la región norte de Perú y tiene como capital a la ciudad de Moyobamba.</p>
+        <h3>Actividades Económicas Principales</h3>
+  </div>
+  <img src="imagenes/Relieve.png" alt="Relieve.png" width="75%">
+</div>
+            <li><strong>Agricultura:</strong> San Martín es conocido por ser una región agrícola importante en Perú. Cultivos como el café, cacao, arroz, maíz, plátano y cítricos son prominentes en la economía local.</li>
+            <li><strong>Ganadería:</strong> Aunque menos prominente que la agricultura, la ganadería también juega un papel en la economía, especialmente en la producción de ganado vacuno y porcino.</li>
+            <li><strong>Pesca:</strong> En algunas zonas cercanas a los ríos y cuerpos de agua, la pesca artesanal es practicada, contribuyendo a la economía local.</li>
+        </ul>
+
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/cTR-P2_IzO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </article>
+
+    <article>
+        <h3>Industria y Comercio</h3>
+        <ul>
+            <li><strong>Industria Alimentaria:</strong> Debido a la producción agrícola, hay una presencia significativa de industrias procesadoras de alimentos, especialmente café y cacao.</li>
+            <li><strong>Turismo:</strong> Aunque no tan desarrollado como en otras regiones de Perú, el turismo tiene potencial debido a la biodiversidad, paisajes naturales y culturales de la región.</li>
+        </ul>
+        <h3>Infraestructura</h3>
+        <ul>
+            <li><strong>Transporte:</strong> La infraestructura vial es crucial para la economía de San Martín, facilitando el movimiento de productos agrícolas hacia los mercados nacionales e internacionales.</li>
+            <li><strong>Energía:</strong> La región también participa en la producción de energía hidroeléctrica, aprovechando los recursos naturales como los ríos y la topografía montañosa.</li>
+        </ul>
+<img src="imagenes/15.JPG" alt="Imagen 1" width="55%" style="margin-bottom: 10px;">          
+        <h3>Desafíos Económicos</h3>
+        <ul>
+            <li><strong>Acceso a Mercados:</strong> A pesar de la producción agrícola, el acceso a mercados a veces puede ser limitado por la infraestructura subdesarrollada.</li>
+            <li><strong>Desarrollo Turístico:</strong> Aunque tiene potencial, el desarrollo del turismo enfrenta desafíos relacionados con la infraestructura y la promoción adecuada.</li>
+        </ul>
+
+    </article>
+</section>
+
+<footer>
+    <p>Derechos reservados &copy; 2024</p>
+</footer>
+
+</body>s
+<script>
+    // Array de mensajes de bienvenida
+    var welcomeMessages = [
+  { 
+    heading: "San Martín es conocido por su festival de la Orquídea",
+    text: "Celebrado cada año en Moyobamba, destacando la belleza de las orquídeas locales."
+  },
+  { 
+    heading: "San Martín es un importante productor de cacao fino de aroma",
+    text: "Reconocido mundialmente por su calidad y sabor únicos."
+  },
+  { 
+    heading: "San Martín tiene una gastronomía variada y deliciosa",
+    text: "Destacando platos como el juane, el tacacho con cecina y el inchicapi."
+  }
+        // Puedes añadir más mensajes aquí
+    ];
+
+    // Función para obtener un índice aleatorio del array
+    function getRandomIndex(array) {
+        return Math.floor(Math.random() * array.length);
+    }
+
+    // Función para mostrar un mensaje aleatorio
+    function showRandomMessage() {
+        var randomIndex = getRandomIndex(welcomeMessages);
+        var message = welcomeMessages[randomIndex];
+
+        var headingElement = document.getElementById('welcome-heading');
+        var textElement = document.getElementById('welcome-text');
+
+        if (headingElement && textElement) {
+            headingElement.textContent = message.heading;
+            textElement.textContent = message.text;
+        }
+
+        // Mostrar el contenido después de la animación de bienvenida
+        var welcomeContainer = document.querySelector('.welcome-container');
+        setTimeout(function() {
+            welcomeContainer.classList.add('hide-welcome');
+            setTimeout(function() {
+                welcomeContainer.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Activar el desplazamiento después de ocultar el mensaje de bienvenida
+            }, 1000); // Ocultar después de 1 segundo
+        }, 3000); // Mostrar durante 3 segundos
+    }
+
+    // Mostrar mensaje aleatorio cuando se cargue la página
+    window.addEventListener('load', function() {
+        showRandomMessage();
+    });
+</script>
+</html>
+

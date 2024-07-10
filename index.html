@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un viaje a san martin</title>
+
+ <style>
+    .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 20px;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        article {
+            flex: 2;
+            background-color: #c0d9d9;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #c0d9d9;
+            padding: 20px;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+        }
+        footer {
+            background-color: #B0C4DE;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .new-section {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        .visitor-form {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .visitor-form input, .visitor-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        .visitor-form input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+         /* Estilo para ocultar los subtemas por defecto */
+        .subtemas {
+            display: none;
+        }
+        
+        /* Estilo para mostrar los subtemas cuando se hace clic en el encabezado */
+        .encabezado:hover .subtemas {
+            display: block;
+        }
+ /* Estilo para el contenedor del mensaje de bienvenida */
+/* Estilo para el contenedor del mensaje de bienvenida */
+  .welcome-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 6s ease-in-out; /* Ajusta el tiempo de transición */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.welcome-message {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+}
+
+.hide-welcome {
+  opacity: 0;
+}
+
+.page-content {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Ajusta el tiempo de transición */
+  visibility: hidden; /* Ocultamos el contenido hasta que se muestre */
+}
+
+.show-content {
+  opacity: 1;
+  visibility: visible;
+}
+
+    </style>
+    <body bgcolor="#FAFAFA"; >
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<div class="welcome-container">
+    <div class="welcome-message">
+        <h1 id="welcome-heading">Bienvenido a nuestra página</h1>
+        <p id="welcome-text">Espere un momento mientras cargamos el contenido...</p>
+    </div>
+</div>
+
+    <header>
+            <div class="encabezado">
+                
+        <h2>Conoce el departamento de san martin </h2>
+        <ul class="subtemas">
+            <nav>
+            <ul>
+                <li><a href="Geografia.html">Geografía</a></li>
+                <li><a href="Social.html">Social</a></li>
+                <li><a href="Historia.html">historia</a></li>
+                <li><a href="Datoscuriosos.html">Datos Curiosos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+  <section>
+         <article>
+             <h2 id="generalidade">Generalidades de San Martin</h2>
+             <div class="container">
+                <div class="text">
+            <h2> Antiguedad del departamento</h2>
+    <p>El departamento de San Martín cumple 118 años de antiguedad,<br>ya que este, en 4de septiembre de 1906, se fundó en Moyobamba<br>su capital. Antiguamente en el virreinato, era la Amazonia peruana<br>que era poco explorada. SU población, conformada en gran parte<br>por misioneros y soldados, dedicada principalmente a la expedición<br>y evangelización. En sus inicios, la región solo tenia comunicación<br>por via area con Lima y otras ciudades importantes del país. Con la<br> construcción de la carretera Marginal de la Selva, en la decada de<br>los años sesentas, la región logro conectarse con el resto del país, lo<br>que permitio un importante crecimiento economico y turistico.</p>
+    <h2>Rasgos más representativos del departamento</h2>
+   <p>El departamento de San Martín, ubicado en la región amazónica del Perú, se destaca<br>por su biodiversidad y paisajes naturales. Un rasgo representativo del entorno selvático,<br>que alberga una gran variedad de flora y fauna. Además, San Martín es conocido por<br>sus prácticas agrícolas sostenibles, especialmente en la producción de café y cacao de<br>alta calidad, que han ganado reconocimiento tanto a nivel nacional como internacional.<br>La combinación de sus recursos naturales y la cultura agrícola hacen de San Martín un<br>lugar emblemático dentro del Perú.</p>
+</div>
+   <img src="imagenes/2.png" alt="Imagen 2" width="55%">
+</div>
+<div class="container">
+     <img src="imagenes/3.png" alt="Imagen 2" width="35%">
+     <div class="text">
+     <h2>Distancia de Lima al departamento</h2>
+    
+<p>Para llegar a la región de San Martín desde Lima, se puede  por avión, bus o vehículo privado. La opción<br>más rápida es tomar un vuelo directo desde el Aeropuerto Internacional Jorge Chávez en Lima hasta el<br>Aeropuerto Cadete FAP Guillermo del Castillo Paredes en Tarapoto, en un vuelo de una hora y media.<br>Esto no  involucra pasar por otras regiones, lo que lo hace el más eficiente en términos de tiempo.</p>
+    <p>Otra opción es viajar en bus, un recorrido de aproximadamente 21 horas que permite atravesar varias<br>regiones. Partiendo de Lima, el bus pasa por Junín, cruzando la cordillera de los Andes, luego por Pasco,<br>llegando a Huánuco y su ciudad de Tingo María, antes de bordear la región de Ucayali y finalmente entrar<br>a San Martín, culminando en Tarapoto. Conducir un vehículo privado sigue una ruta similar, con un<br>recorrido de 24 horas, ofreciendo flexibilidad y la oportunidad de disfrutar del paisaje en cada región<br>atravesada.</p>
+</div>
+ </div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+         </article>
+         <aside>
+             <h2>video acerca de San Martin</h2>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-NyTVxp2wgw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+             <h2>Formulario de Búsqueda en Google</h2>
+             <form action="https://www.google.com/search" method="get" target="_blank">
+                 <input type="text" name="q" placeholder="Buscar en Google">
+                 <input type="submit" value="Buscar">
+             </form>
+             <h2> Imágenes de  San Martin</h2>
+           
+             <img src="imagenes/1.png" alt="Imagen 1" width="55%" style="margin-bottom: 10px;">
+
+              
+         </aside>
+ </section>
+
+
+<section class="visitor-form">
+        <h2>Registro de Visitantes</h2>
+         <img src="imagenes/4.png" alt="Imagen 1" width="20%" style="margin-bottom: 10px;">
+        <form>
+            <input type="text" name="name" placeholder="Nombre Completo">
+            <input type="email" name="email" placeholder="Correo Electrónico">
+            <textarea name="comments" placeholder="Comentarios"></textarea>
+            <input type="submit" value="Registrarse">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 ExplorandoSanMartin.com - Todos los derechos reservados</p>
+    </footer>
+<script>
+    // Array de mensajes de bienvenida
+    var welcomeMessages = [
+        { heading: "San Martín fue fundado el 4 de septiembre de 1906 en Moyobamba", text: "Inicialmente, la región era parte de la Amazonía peruana" },
+        { heading: "San Martín es conocido por su producción de café de alta calidad", text: " siendo una de las regiones líderes en la producción de café arábico en el Perú." },
+        { heading: "San Martín es famoso por sus impresionantes paisajes selváticos y su biodiversidad única", text: " atrayendo a visitantes por su belleza natural y riqueza ambiental." }
+        // Puedes añadir más mensajes aquí
+    ];
+
+    // Función para obtener un índice aleatorio del array
+    function getRandomIndex(array) {
+        return Math.floor(Math.random() * array.length);
+    }
+
+    // Función para mostrar un mensaje aleatorio
+    function showRandomMessage() {
+        var randomIndex = getRandomIndex(welcomeMessages);
+        var message = welcomeMessages[randomIndex];
+
+        var headingElement = document.getElementById('welcome-heading');
+        var textElement = document.getElementById('welcome-text');
+
+        if (headingElement && textElement) {
+            headingElement.textContent = message.heading;
+            textElement.textContent = message.text;
+        }
+
+        // Mostrar el contenido después de la animación de bienvenida
+        var welcomeContainer = document.querySelector('.welcome-container');
+        setTimeout(function() {
+            welcomeContainer.classList.add('hide-welcome');
+            setTimeout(function() {
+                welcomeContainer.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Activar el desplazamiento después de ocultar el mensaje de bienvenida
+            }, 1000); // Ocultar después de 1 segundo
+        }, 3000); // Mostrar durante 3 segundos
+    }
+
+    // Mostrar mensaje aleatorio cuando se cargue la página
+    window.addEventListener('load', function() {
+        showRandomMessage();
+    });
+</script>
+<html>
